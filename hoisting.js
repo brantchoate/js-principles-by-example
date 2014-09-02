@@ -1,3 +1,6 @@
+// Hoisting - Javascript passes the DECLARATION (not the initialization) of a variable to the top of
+// a function no matter where it's declared within the scope of that function
+
 var myvar = 'global value'; 
   
 (function() { 
