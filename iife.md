@@ -1,23 +1,17 @@
-//IIFE - Immediately Invoked Function Expressions
+# IIFE - Immediately Invoked Function Expressions
 
+It's important to know the difference between expressions, statements, and declarations in regards to functions before reading this.
 
-//treated as function expression - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
-
-var myFunc = function(){
-  console.log("all your base"); //logs 'all your base'
-}
-
-
-//treated as function declaration - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
-
+# BAD - Doesn't work because it thinks
+```javascript
 function(){ 
   console.log("all your base"); //throws SyntaxError: Function statements must have a name.
 }();
+```
 
-
-// While this function declaration is now syntactically valid, it's still
-// a statement, and the following set of parens is invalid because the
-// grouping operator needs to contain an expression.
+While this function declaration is now syntactically valid, it's still
+a statement, and the following set of parens is invalid because the
+grouping operator needs to contain an expression.
 
 function what(){ 
   console.log("michael bay ruined my childhood"); // SyntaxError: Unexpected token ')'
@@ -26,8 +20,8 @@ function what(){
 
 //This will take away the SyntaxError but the function won't execute
 
-function cool(){
-  console.log("chocolate rain"); //does nothing
+function what(){
+  console.log("michael bay ruined my childhood");
  }(1);
 
 
