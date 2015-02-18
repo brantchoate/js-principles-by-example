@@ -1,3 +1,8 @@
+//Global Variables in Javascript - This example is to illustrate:
+// 1) the different ways to call globals,
+// 2) the ways in which globals can be inadvertantly created
+
+
 //how to access globals
 
 globalvar = "evil";
