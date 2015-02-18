@@ -19,3 +19,28 @@ fn(); // logs window object
 ```
 
 ### Pattern 3 - .call() or .apply()
+These methods will set "this" to reference the object that is passed in as the argument
+```javascript
+var obj = {};
+var fn = function() {
+  console.log(this);
+}
+fn.call(obj); //logs obj object
+```
+
+### Pattern 4 - Method Invocation
+```javascript
+var obj = {
+  mthd : function() {
+    console.log(this);
+  }
+};
+obj.mthd(); //logs obj object
+```
+
+### Pattern 5 - Construction method
+```javascript
+var fn = function() {
+  console.log(this);
+}
+var inst = new fn(); // new object
