@@ -4,3 +4,4 @@ Javascript Code Snippets that illustrate important nuances of JS + also show how
 * [this keyword](this.md)
 * [global variables](globals.md)
 * [hoisting](hoisting.md)
+* [immediately invoked function expressions](iife.md)
